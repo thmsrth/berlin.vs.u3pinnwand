@@ -17,12 +17,16 @@ public class PinnwandServer implements  Pinnwand {
     public PinnwandServer() throws RemoteException {
         messageList = new ArrayList<Message>();
         index = 0;
-        new Thread(new MessageLifetimeTrigger(this));
     }
 
     public static void main(String args[]) {
         try {
-            Naming.rebind("pinnwand", new PinnwandServer());
+            PinnwandServer server = new PinnwandServer();
+            MessageLifetimeTrigger msgTrigger = new MessageLifetimeTrigger(server);
+
+
+            Naming.rebind("pinnwand", server);
+            new Thread(msgTrigger).start();
         } catch(Exception ex) {
             ex.printStackTrace();
         }
