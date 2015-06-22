@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c2442a2-e3c0-4ad3-ad65-5796d854a955" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PinnwandClient.java" afterPath="$PROJECT_DIR$/src/PinnwandClient.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ClientThread.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ClientThreadsLifetimeTrigger.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PinnwandDataHandler.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PinnwandServer.java" afterPath="$PROJECT_DIR$/src/PinnwandServer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="berlin.vs.u3pinnwand.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,25 +41,61 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PinnwandServer.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PinnwandServer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/PinnwandServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="29" column="2" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
+            <state vertical-scroll-proportion="1.6774193">
+              <caret line="147" column="34" selection-start-line="147" selection-start-column="34" selection-end-line="147" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2859#2860#0" expanded="true" />
-                <element signature="e#2898#2899#0" expanded="true" />
+                <element signature="e#4138#4139#0" expanded="true" />
+                <element signature="e#4179#4180#0" expanded="true" />
+                <element signature="e#4224#4225#0" expanded="true" />
+                <element signature="e#4263#4264#0" expanded="true" />
+                <element signature="e#4406#4407#0" expanded="true" />
+                <element signature="e#4452#4453#0" expanded="true" />
+                <element signature="e#4490#4491#0" expanded="true" />
+                <element signature="e#4527#4528#0" expanded="true" />
+                <element signature="e#4582#4583#0" expanded="true" />
+                <element signature="e#4621#4622#0" expanded="true" />
+                <element signature="e#4697#4698#0" expanded="true" />
+                <element signature="e#4753#4754#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PinnwandClient.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ClientThread.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ClientThread.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#355#356#0" expanded="true" />
+                <element signature="e#387#388#0" expanded="true" />
+                <element signature="e#421#422#0" expanded="true" />
+                <element signature="e#453#454#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClientThreadsLifetimeTrigger.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ClientThreadsLifetimeTrigger.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PinnwandClient.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PinnwandClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.15384616">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="7" column="69" selection-start-line="7" selection-start-column="69" selection-end-line="7" selection-end-column="69" />
               <folding />
             </state>
           </provider>
@@ -65,7 +105,7 @@
         <entry file="file://$PROJECT_DIR$/src/Message.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
+              <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="13" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -83,16 +123,6 @@
                 <element signature="e#202#203#0" expanded="true" />
                 <element signature="e#246#247#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PinnwandDataHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/PinnwandDataHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -120,9 +150,11 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/Message.java" />
         <option value="$PROJECT_DIR$/src/MessageLifetimeTrigger.java" />
-        <option value="$PROJECT_DIR$/src/PinnwandServer.java" />
         <option value="$PROJECT_DIR$/src/Pinnwand.java" />
         <option value="$PROJECT_DIR$/src/PinnwandClient.java" />
+        <option value="$PROJECT_DIR$/src/ClientThreadsLifetimeTrigger.java" />
+        <option value="$PROJECT_DIR$/src/ClientThread.java" />
+        <option value="$PROJECT_DIR$/src/PinnwandServer.java" />
       </list>
     </option>
   </component>
@@ -223,6 +255,11 @@
     <property name="ignore_missing_gitignore" value="true" />
     <property name="recentsLimit" value="5" />
     <property name="dynamic.classpath" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.PinnwandClient">
     <configuration default="false" name="PinnwandServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -607,16 +644,16 @@
       <option name="number" value="Default" />
       <updated>1434379326846</updated>
       <workItem from="1434976963767" duration="3778000" />
-      <workItem from="1434981526985" duration="1143000" />
+      <workItem from="1434981526985" duration="3004000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4921000" />
+    <option name="totallyTimeSpent" value="6782000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -626,7 +663,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32916668" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24212272" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -673,8 +710,18 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2859#2860#0" expanded="true" />
-            <element signature="e#2898#2899#0" expanded="true" />
+            <element signature="e#4138#4139#0" expanded="true" />
+            <element signature="e#4179#4180#0" expanded="true" />
+            <element signature="e#4224#4225#0" expanded="true" />
+            <element signature="e#4263#4264#0" expanded="true" />
+            <element signature="e#4406#4407#0" expanded="true" />
+            <element signature="e#4452#4453#0" expanded="true" />
+            <element signature="e#4490#4491#0" expanded="true" />
+            <element signature="e#4527#4528#0" expanded="true" />
+            <element signature="e#4582#4583#0" expanded="true" />
+            <element signature="e#4621#4622#0" expanded="true" />
+            <element signature="e#4697#4698#0" expanded="true" />
+            <element signature="e#4753#4754#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -709,14 +756,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PinnwandDataHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Pinnwand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -733,8 +772,18 @@
           <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2859#2860#0" expanded="true" />
-            <element signature="e#2898#2899#0" expanded="true" />
+            <element signature="e#4138#4139#0" expanded="true" />
+            <element signature="e#4179#4180#0" expanded="true" />
+            <element signature="e#4224#4225#0" expanded="true" />
+            <element signature="e#4263#4264#0" expanded="true" />
+            <element signature="e#4406#4407#0" expanded="true" />
+            <element signature="e#4452#4453#0" expanded="true" />
+            <element signature="e#4490#4491#0" expanded="true" />
+            <element signature="e#4527#4528#0" expanded="true" />
+            <element signature="e#4582#4583#0" expanded="true" />
+            <element signature="e#4621#4622#0" expanded="true" />
+            <element signature="e#4697#4698#0" expanded="true" />
+            <element signature="e#4753#4754#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -743,14 +792,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="75" selection-start-line="9" selection-start-column="75" selection-end-line="9" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PinnwandDataHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -771,8 +812,18 @@
           <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2859#2860#0" expanded="true" />
-            <element signature="e#2898#2899#0" expanded="true" />
+            <element signature="e#4138#4139#0" expanded="true" />
+            <element signature="e#4179#4180#0" expanded="true" />
+            <element signature="e#4224#4225#0" expanded="true" />
+            <element signature="e#4263#4264#0" expanded="true" />
+            <element signature="e#4406#4407#0" expanded="true" />
+            <element signature="e#4452#4453#0" expanded="true" />
+            <element signature="e#4490#4491#0" expanded="true" />
+            <element signature="e#4527#4528#0" expanded="true" />
+            <element signature="e#4582#4583#0" expanded="true" />
+            <element signature="e#4621#4622#0" expanded="true" />
+            <element signature="e#4697#4698#0" expanded="true" />
+            <element signature="e#4753#4754#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -785,14 +836,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PinnwandDataHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -801,11 +844,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PinnwandDataHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/Pinnwand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-          <folding />
+          <caret line="1" column="32" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -821,43 +866,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/PinnwandClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="69" selection-start-line="7" selection-start-column="69" selection-end-line="7" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Message.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
+          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="13" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Pinnwand.java">
+    <entry file="file://$PROJECT_DIR$/src/ClientThreadsLifetimeTrigger.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="32" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
+          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ClientThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#355#356#0" expanded="true" />
+            <element signature="e#387#388#0" expanded="true" />
+            <element signature="e#421#422#0" expanded="true" />
+            <element signature="e#453#454#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/PinnwandServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="2" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
+        <state vertical-scroll-proportion="1.6774193">
+          <caret line="147" column="34" selection-start-line="147" selection-start-column="34" selection-end-line="147" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2859#2860#0" expanded="true" />
-            <element signature="e#2898#2899#0" expanded="true" />
+            <element signature="e#4138#4139#0" expanded="true" />
+            <element signature="e#4179#4180#0" expanded="true" />
+            <element signature="e#4224#4225#0" expanded="true" />
+            <element signature="e#4263#4264#0" expanded="true" />
+            <element signature="e#4406#4407#0" expanded="true" />
+            <element signature="e#4452#4453#0" expanded="true" />
+            <element signature="e#4490#4491#0" expanded="true" />
+            <element signature="e#4527#4528#0" expanded="true" />
+            <element signature="e#4582#4583#0" expanded="true" />
+            <element signature="e#4621#4622#0" expanded="true" />
+            <element signature="e#4697#4698#0" expanded="true" />
+            <element signature="e#4753#4754#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PinnwandClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15384616">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
