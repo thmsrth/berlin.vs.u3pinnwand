@@ -17,6 +17,7 @@ public class PinnwandServer implements  Pinnwand {
     public PinnwandServer() throws RemoteException {
         messageList = new ArrayList<Message>();
         index = 0;
+        new Thread(new MessageLifetimeTrigger(this));
     }
 
     public static void main(String args[]) {
@@ -83,4 +84,17 @@ public class PinnwandServer implements  Pinnwand {
         messageList.add(new Message(index, msg));
         return true;
     }
+
+    public List<Message> getMessageList(){
+        return this.messageList;
+    }
+
+    public int getMessageLifetime(){
+        return this.messageLifetime;
+    }
+
+    public void setMessageList(List<Message> messageList){
+        this.messageList = messageList;
+    }
+
 }
