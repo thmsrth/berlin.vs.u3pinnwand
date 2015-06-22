@@ -1,41 +1,44 @@
 import java.util.Calendar;
+import java.util.Iterator;
 import java.util.List;
 
 public class MessageLifetimeTrigger implements Runnable {
 
-        PinnwandServer server;
+    PinnwandServer server;
 
-        public MessageLifetimeTrigger(PinnwandServer server){
-            this.server = server;
-        }
+    public MessageLifetimeTrigger(PinnwandServer server) {
+        this.server = server;
+    }
 
-        @Override
-        public void run() {
+    @Override
+    public void run() {
 
-            try {
+        try {
 
-                while(true) {
+            while (true) {
 
-                    System.out.println("check Message List");
-                    List<Message> list = server.getMessageList();
+                System.out.println("check Message List");
+                List<Message> list = server.getMessageList();
 
-                    for(Message m: list){
-                        Calendar calendar = Calendar.getInstance();
-                        calendar.add(Calendar.SECOND, - server.getMessageLifetime());
-                        if (calendar.getTime().after(m.getTime())){
-                            list.remove(m);
-                        }
+                for (Iterator<Message> iterator = list.iterator(); iterator.hasNext(); ) {
+                    Message msg = iterator.next();
+                    Calendar calendar = Calendar.getInstance();
+                    calendar.add(Calendar.SECOND, -server.getMessageLifetime());
+                    if (calendar.getTime().after(msg.getTime())) {
+                        System.out.println("Remove Message with Index:" + msg.getIndex());
+                        iterator.remove();
                     }
-                    server.setMessageList(list);
-
-                    System.out.println("Going to sleep ...zzzZZZ");
-
-                    // will sleep for at least 5 seconds (5000 miliseconds)
-                    Thread.sleep(10000L);
                 }
-            } catch ( InterruptedException exc ) {
-                exc.printStackTrace();
+                server.setMessageList(list);
+
+                System.out.println("Going to sleep ...zzzZZZ");
+
+                // will sleep for at least 5 seconds (5000 miliseconds)
+                Thread.sleep(10000L);
             }
+        } catch (InterruptedException exc) {
+            exc.printStackTrace();
         }
+    }
 }
 

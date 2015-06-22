@@ -9,9 +9,9 @@ public class PinnwandClient {
 
 			int loggedIn = server.login("test123");
 
-			if (loggedIn == 0){
+			if (loggedIn == 1){
 				System.out.println("Can't log in");
-				System.exit(0);
+				//System.exit(0);
 			}
 
 			System.out.println("Login worked");
@@ -24,7 +24,7 @@ public class PinnwandClient {
 			}
 			
 			// Schicke 2. Nachricht
-			if(server.putMessage("Aues klaaar?")){
+			if(server.putMessage("123132")){
 				System.out.println("Nachricht erfolgreich an Pinnwand geschickt.");
 			}else{
 				System.out.println("Nachricht zu lang!");

@@ -13,7 +13,7 @@ public class PinnwandServer extends UnicastRemoteObject implements Pinnwand {
     private int maxNumMessages = 20;
     private int maxLengthMessage = 160;
     private String nameOfService = "Pinnwand";
-    private int messageLifetime = 60; //sec
+    private int messageLifetime = 20; //sec
 
     private int clientLifetime = 300; //sec
 
@@ -57,7 +57,6 @@ public class PinnwandServer extends UnicastRemoteObject implements Pinnwand {
         int returnVal;
 
         if (password.equals(this.presharedKey)) {
-
             if (!checkLoggedIn()) {
                 this.clientThreadList.add(new ClientThread(getClient()));
             }
@@ -82,7 +81,7 @@ public class PinnwandServer extends UnicastRemoteObject implements Pinnwand {
 
         try {
             client = getClientHost();
-            System.out.println("Client: "+ client);
+            System.out.println("Client: " + client);
         } catch (ServerNotActiveException e) {
             e.printStackTrace();
         }
@@ -138,6 +137,7 @@ public class PinnwandServer extends UnicastRemoteObject implements Pinnwand {
                 return true;
             }
             messageList.add(new Message(index, msg));
+            index++;
             return true;
         }
         return false;
