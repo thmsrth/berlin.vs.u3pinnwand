@@ -4,8 +4,8 @@ public class PinnwandClient {
 
 	public static void main(String args[]) {
 		try {
-			// Pinnwand server = (Pinnwand)Naming.lookup("pinnwand");
-			PinnwandServer server = (PinnwandServer) Naming.lookup("pinnwand");
+			String rmiServerURL = "rmi://127.0.0.1/Pinnwand";
+			Pinnwand server = (Pinnwand) Naming.lookup(rmiServerURL);
 			
 			// Schicke Nachricht
 			if(server.putMessage("Hallo zaeme!!!")){
