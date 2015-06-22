@@ -1,11 +1,9 @@
-import java.net.MalformedURLException;
 import java.rmi.Naming;
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 import java.rmi.server.ServerNotActiveException;
 import java.rmi.server.UnicastRemoteObject;
-import java.sql.Struct;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -27,8 +25,8 @@ public class PinnwandServer extends UnicastRemoteObject implements Pinnwand {
 
     public PinnwandServer() throws RemoteException {
         super();
-        messageList = new ArrayList<Message>();
-        clientThreadList = new ArrayList<ClientThread>();
+        messageList = new ArrayList<>();
+        clientThreadList = new ArrayList<>();
         index = 0;
         new Thread(new MessageLifetimeTrigger(this));
     }
@@ -58,7 +56,7 @@ public class PinnwandServer extends UnicastRemoteObject implements Pinnwand {
     public int login(String password) throws RemoteException {
         int returnVal;
 
-        if (password == this.presharedKey) {
+        if (password.equals(this.presharedKey)) {
 
             if (!checkLoggedIn()) {
                 this.clientThreadList.add(new ClientThread(getClient()));
@@ -84,6 +82,7 @@ public class PinnwandServer extends UnicastRemoteObject implements Pinnwand {
 
         try {
             client = getClientHost();
+            System.out.println("Client: "+ client);
         } catch (ServerNotActiveException e) {
             e.printStackTrace();
         }

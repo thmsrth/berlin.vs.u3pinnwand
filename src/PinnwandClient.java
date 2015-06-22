@@ -6,6 +6,15 @@ public class PinnwandClient {
 		try {
 			String rmiServerURL = "rmi://127.0.0.1/Pinnwand";
 			Pinnwand server = (Pinnwand) Naming.lookup(rmiServerURL);
+
+			int loggedIn = server.login("test123");
+
+			if (loggedIn == 0){
+				System.out.println("Can't log in");
+				System.exit(0);
+			}
+
+			System.out.println("Login worked");
 			
 			// Schicke Nachricht
 			if(server.putMessage("Hallo zaeme!!!")){
