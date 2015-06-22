@@ -1,9 +1,13 @@
+import java.net.MalformedURLException;
 import java.rmi.Naming;
 import java.rmi.RemoteException;
+import java.rmi.registry.LocateRegistry;
+import java.rmi.registry.Registry;
+import java.rmi.server.UnicastRemoteObject;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PinnwandServer implements  Pinnwand {
+public class PinnwandServer extends UnicastRemoteObject implements  Pinnwand {
 
     private String presharedKey = "test123";
     private int maxNumMessages = 20;
@@ -15,21 +19,31 @@ public class PinnwandServer implements  Pinnwand {
     private int index;
 
     public PinnwandServer() throws RemoteException {
+    	super();
         messageList = new ArrayList<Message>();
         index = 0;
+        new Thread(new MessageLifetimeTrigger(this));
     }
 
     public static void main(String args[]) {
-        try {
+    	try {
+    	      LocateRegistry.createRegistry(Registry.REGISTRY_PORT);
+    	    }
+    	    
+    	    catch (RemoteException ex) {
+    	      System.out.println(ex.getMessage());
+    	    }
+    	try {
+
             PinnwandServer server = new PinnwandServer();
             MessageLifetimeTrigger msgTrigger = new MessageLifetimeTrigger(server);
 
-
-            Naming.rebind("pinnwand", server);
+            Naming.rebind("Pinnwand", server);
             new Thread(msgTrigger).start();
         } catch(Exception ex) {
             ex.printStackTrace();
         }
+        
     }
 
 
